@@ -4,7 +4,8 @@ body {
 }
 
 #container {
-    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -14,11 +15,12 @@ h1 {
 #left-div {
     width: 45%;
     float: left;
+    margin-right: 5%;
 }
 
 #right-div {
     width: 45%;
-    float: right;
+    float: left;
 }
 
 #left-div ol, #right-div ul {
@@ -43,6 +45,11 @@ ul {
     font-weight: 300;
     padding: 10px;
     list-style-position: inside;
+}
+
+strong {
+    font-weight: 700;
+    color: #4F3674;
 }
 
 /* LEFT SIDE (Ordered List - solid border) */
