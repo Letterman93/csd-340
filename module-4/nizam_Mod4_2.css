@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #4F3674;
+}
+
+/* IMAGE GALLERY */
+#image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 10%;
+}
+
+/* Each gallery card */
+.gallery-item {
+    background-color: #ffffff;
+    border: 1px solid #4F3674;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* Titles for each book */
+h3 {
+    text-align: center;
+    font-weight: 500;
+    color: #4F3674;
+}
+
+/* Image styling */
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+img {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Caption styling */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: #D6A800;
+    margin-top: 10px;
+}
+
+/* Bottom link */
+#bottom-div {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4F3674;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #D6A800;
+}
