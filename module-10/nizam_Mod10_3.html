@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Zak Nizam, Module 10.3 Assignment -->
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Exercise, Part 2">
+    <meta name="keywords" content="CSD 340, HTML, CSS, JavaScript, Bellevue University">
+    <meta name="author" content="Zak Nizam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="nizam_Mod10_3.css">
+
+    <script>
+        let currentScene = 'images/sky.svg';
+
+        function changeScene(imageFile, captionText) {
+            currentScene = imageFile;
+            document.getElementById('sceneFrame').src = imageFile;
+            document.getElementById('sceneCaption').innerHTML = captionText;
+        }
+
+        function showClickedMessage() {
+            document.getElementById('sceneCaption').innerHTML = 'You clicked the large image! Nice pick.';
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <h2>Image Interaction Exercise</h2>
+
+        <p class="intro">
+            Click one of the smaller scene panels below to update the larger display above. Then click the large image to run the JavaScript function and update the message.
+        </p>
+
+        <img id="sceneFrame" src="images/sky.svg" alt="Interactive scene" onclick="showClickedMessage()">
+        <p class="caption" id="sceneCaption">A bright sky scene. Click one of the thumbnails below to change the view.</p>
+
+        <div class="thumbnail-row">
+            <span class="thumbnail" onclick="changeScene('images/sky.svg', 'A bright sky scene. Click the large image to interact.')">
+                <img src="images/sky.svg" alt="Sky thumbnail">
+            </span>
+            <span class="thumbnail" onclick="changeScene('images/sunset.svg', 'A warm sunset scene. Click the large image to interact.')">
+                <img src="images/sunset.svg" alt="Sunset thumbnail">
+            </span>
+            <span class="thumbnail" onclick="changeScene('images/stars.svg', 'A peaceful night sky. Click the large image to interact.')">
+                <img src="images/stars.svg" alt="Stars thumbnail">
+            </span>
+        </div>
+
+        <hr />
+
+        <address>
+            <p><a href="../index.html">back to Landing Page</a></p>
+        </address>
+    </div>
+</body>
+</html>
